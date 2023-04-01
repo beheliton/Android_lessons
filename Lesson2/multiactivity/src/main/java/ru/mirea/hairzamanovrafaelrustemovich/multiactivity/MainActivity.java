@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
     public void sendData(View view) {
         EditText editText = (EditText) findViewById(R.id.editText);
         String message = editText.getText().toString();
