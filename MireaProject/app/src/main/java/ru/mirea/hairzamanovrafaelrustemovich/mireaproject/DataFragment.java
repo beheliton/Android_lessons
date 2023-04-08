@@ -60,28 +60,23 @@ public class DataFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        // Создаем корневой View для фрагмента
         View rootView = inflater.inflate(R.layout.fragment_data, container, false);
 
-        // Находим CardView в разметке и устанавливаем цвет фона
         CardView cardView = rootView.findViewById(R.id.card_view);
         cardView.setCardBackgroundColor(getResources().getColor(R.color
-                .material_you_color_primary));
+                .material_color_primary));
 
-        // Задаем отступы для CardView
         int margin = getResources().getDimensionPixelSize(R.dimen.margin);
         ViewGroup.MarginLayoutParams marginLayoutParams = (ViewGroup.MarginLayoutParams) cardView
                 .getLayoutParams();
         marginLayoutParams.setMargins(margin, margin, margin, margin);
         cardView.setLayoutParams(marginLayoutParams);
 
-        // Находим TextView и задаем текст и цвет
         TextView textView = rootView.findViewById(R.id.text_view);
         textView.setText("Веб-дизайн - это процесс создания веб-сайтов. Он включает в себя различные аспекты, такие как визуальный дизайн, пользовательский интерфейс, создание контента и оптимизацию для поисковых систем. Веб-дизайнеры используют различные инструменты, такие как графические редакторы и языки программирования, чтобы создать привлекательные и функциональные сайты для пользователей. Важными навыками для веб-дизайнеров являются знание HTML, CSS и JavaScript, а также умение работать с графическими программами и веб-фреймворками. Цветовая схема и компоновка элементов сайта также важны для создания хорошо выглядящего и удобного для использования интерфейса.");
         textView.setTextColor(getResources().getColor(R.color
-                .material_you_color_on_primary));
+                .material_color_on_primary));
 
-        // Задаем отступы для TextView
         int padding = getResources().getDimensionPixelSize(R.dimen.padding);
         textView.setPadding(padding, padding, padding, padding);
 

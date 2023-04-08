@@ -25,11 +25,11 @@
     <fragment
         android:id="@+id/dataFragment"
         android:name="ru.mirea.hairzamanovrafaelrustemovich.mireaproject.DataFragment"
-        android:label="fragment_data"
+        android:label="Information"
         tools:layout="@layout/fragment_data" />
     <fragment
         android:id="@+id/webViewFragment"
         android:name="ru.mirea.hairzamanovrafaelrustemovich.mireaproject.WebViewFragment"
-        android:label="fragment_web_view"
+        android:label="Browser"
         tools:layout="@layout/fragment_web_view" />
 </navigation>
